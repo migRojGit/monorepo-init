@@ -1,0 +1,24 @@
+{
+  "name": "monorepo-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Equipo de Desarrollo Confuturo",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build":"turbo run build",
+    "dev": "turbo run dev --no-cache --parallel --continue",
+    "lint": "turbo run lint"
+  },
+  "packageManager": "yarn@1.22.22",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.5.0"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.3"
+  }
+}
